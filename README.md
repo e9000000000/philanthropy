@@ -1,3 +1,7 @@
+# Сайт для помощи неграм
+![image](https://user-images.githubusercontent.com/46247113/210902343-5db11c95-0f47-4972-bdd0-a0c46eeee74b.png)  
+задонать негру - помоги человечеству стать лучше.
+
 # Gulp - сборка MaxGraph
 
 > Используется Gulp 4
