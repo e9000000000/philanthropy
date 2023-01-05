@@ -1,0 +1,71 @@
+/* stylelint-disable */
+
+@mixin big-desktop {
+  @media (max-width: (1440px)) {
+    @content;
+  }
+}
+
+@mixin two-tablet {
+  @media (max-width: (1200px)) {
+    @content;
+  }
+}
+
+@mixin x-tablet {
+  @media (max-width: (1140px)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: (1100px)) {
+    @content;
+  }
+}
+
+@mixin for-desktop {
+  @media (max-width: (1024px)) {
+    @content;
+  }
+}
+
+@mixin nine-tablet {
+  @media (max-width: (920px)) {
+    @content;
+  }
+}
+
+@mixin mini-tablet {
+  @media (max-width: (790px)) {
+    @content;
+  }
+}
+
+@mixin small-tablet {
+  @media (max-width: (768px)) {
+    @content;
+  }
+}
+@mixin six-tablet {
+  @media (max-width: (680px)) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: (576px)) {
+    @content;
+  }
+}
+@mixin five {
+  @media (max-width: (530px)) {
+    @content;
+  }
+}
+
+@mixin f-tablet {
+  @media (max-width: (420px)) {
+    @content;
+  }
+}

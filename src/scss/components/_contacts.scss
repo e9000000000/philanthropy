@@ -1,0 +1,92 @@
+.contacts {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 110px;
+    border-bottom: 1px solid #f0ece8;
+    @include two-tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+      // align-items: center;
+      text-align: center;
+    }
+  }
+  &__logo {
+    @include two-tablet {
+      margin-bottom: 30px;
+    }
+  }
+  &__descr {
+    margin: 0;
+    margin-top: 27px;
+    max-width: 360px;
+  }
+  &__pages {
+    display: flex;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    @include mini-tablet {
+      margin-right: 0;
+    }
+  }
+  &__subject {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  &__list:not(:last-child) {
+    margin-right: 60px;
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--semi-color);
+  }
+  &__link:hover {
+    color: #d19103;
+    transition: all 0.3s ease-in-out;
+  }
+  &__item {
+    margin-bottom: 22px;
+  }
+  &__accede {
+    max-width: 388px;
+    background-image: url(../img/contacts-bg.png);
+    @include bg-cover;
+    padding: 64px 48px 50px;
+    border-radius: 14px;
+  }
+  &__content {
+    max-width: 292px;
+    text-align: center;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--dark-color);
+    margin-bottom: 21px;
+  }
+  &__btn {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 23px 94px 28px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    @include five {
+      padding: 21px 4px 23px 4px;
+    }
+  }
+  &__btn:hover {
+    color: var(--dark-color);
+  }
+  &__light-btn {
+    width: 100%;
+    padding: 24px 51px 29px 71px;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    @include five {
+      padding: 21px 4px 23px 4px;
+    }
+  }
+}

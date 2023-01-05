@@ -1,0 +1,126 @@
+.results {
+  margin: 200px 0;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include nine-tablet {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  &__left {
+    max-width: 520px;
+  }
+  &__subtitle {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 30px;
+    @include mobile {
+      max-width: 345px;
+      font-size: 28px;
+      line-height: 35px;
+      text-align: center;
+    }
+  }
+  &__wrapper {
+    margin-bottom: 70px;
+    @include mobile {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  &__list {
+    display: grid;
+    gap: 55px;
+    grid-template-columns: repeat(12, 1fr);
+    @include mobile {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+  }
+  &__item {
+    display: grid;
+    grid-column: 5 span;
+    position: relative;
+    margin-left: 90px;
+    max-width: 227px;
+    @include mobile {
+      grid-column: 3 span;
+      margin-right: 10px;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 29px;
+  }
+  &__item:nth-child(1) ::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/result-1.svg);
+    top: -2px;
+    left: -90px;
+    width: 76px;
+    height: 76px;
+    align-items: center;
+  }
+  &__item:nth-child(2) ::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/result-2.svg);
+    top: -2px;
+    left: -90px;
+    width: 76px;
+    height: 76px;
+    align-items: center;
+  }
+  &__item:nth-child(3) ::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/result-3.svg);
+    top: -2px;
+    left: -90px;
+    width: 76px;
+    height: 76px;
+    align-items: center;
+  }
+  &__item:nth-child(4) ::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/result-4.svg);
+    top: -2px;
+    left: -90px;
+    width: 76px;
+    height: 76px;
+    align-items: center;
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 9px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 44px;
+    color: var(--dark-color);
+  }
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--text-color);
+  }
+  &__btn {
+    padding: 22px 38px;
+    color: var(--dark-color);
+  }
+  &__right {
+    margin-left: 116px;
+    @include nine-tablet {
+      display: none;
+    }
+  }
+}

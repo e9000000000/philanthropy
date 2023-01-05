@@ -1,0 +1,95 @@
+.hero {
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // padding-left: max(15px, calc((100% - 1220px) / 2));
+
+    @include for-desktop {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  &__left {
+    flex-shrink: 0;
+    max-width: 609px;
+    margin-right: 43px;
+    padding-top: 50px;
+
+    @include for-desktop {
+      margin-right: 0;
+    }
+
+    @include six-tablet {
+      max-width: 420px;
+    }
+    @include f-tablet {
+      max-width: 320px;
+    }
+  }
+  &__left::before {
+    content: "";
+    display: inline-block;
+    height: 4px;
+    width: 140px;
+    background-color: var(--accent-color);
+    margin-bottom: 23px;
+    border-radius: 100px;
+  }
+  &__title {
+    margin: 0;
+    display: inline-block;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+    color: var(--dark-color);
+
+    @include six-tablet {
+      font-size: 40px;
+      line-height: 60px;
+    }
+
+    @include f-tablet {
+      font-style: 40px;
+      line-height: 50px;
+    }
+  }
+  &__descr {
+    margin: 0;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    color: var(--text-color);
+    @include six-tablet {
+      margin-bottom: 25px;
+    }
+
+    @include f-tablet {
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+  &__link {
+    margin-bottom: 60px;
+    padding: 23px 38px;
+    color: var(--dark-color);
+    @include six-tablet {
+      margin-bottom: 20px;
+      padding: 23px 20px;
+    }
+  }
+  &__link:not(:last-child) {
+    margin-right: 30px;
+    @include six-tablet {
+      margin-right: 10px;
+    }
+  }
+  &__right {
+    display: inline-block;
+    // width: calc(100% - 609px - 43px);
+    max-height: 869px;
+  }
+}

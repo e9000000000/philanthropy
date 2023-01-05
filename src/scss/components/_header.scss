@@ -1,0 +1,31 @@
+.header {
+  padding: 42px 0;
+  border-bottom: 1px solid #f0ece8;
+  &__logo {
+    @include f-tablet {
+      width: 165px;
+      height: 35px;
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+  &__donate {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  &__basket {
+    margin: 0 25px;
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    padding: 18px 24px;
+    color: var(--dark-color);
+    @include small-tablet {
+      display: none;
+    }
+  }
+}

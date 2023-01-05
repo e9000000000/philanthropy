@@ -1,0 +1,113 @@
+.news {
+  margin-top: -20px;
+  padding-bottom: 200px;
+  &__top {
+    text-align: center;
+    margin-bottom: 49px;
+  }
+  &__subtitle {
+    margin-bottom: 17px;
+  }
+  &__cards {
+    display: flex;
+    // justify-content: space-between;
+    @include nine-tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__card {
+    position: relative;
+    margin-bottom: 285px;
+  }
+  &__card:not(:last-child) {
+    margin-right: 28px;
+    @include nine-tablet {
+      margin-right: 0;
+    }
+  }
+
+  &__modal {
+    position: absolute;
+    left: 0;
+    bottom: -220px;
+    background: var(--light-color);
+    padding: 49px 49px 44px;
+    max-width: 548px;
+    border: 1px solid #f0ece8;
+    box-shadow: 0px 2px 12px rgba(43, 43, 43, 0.08);
+    border-radius: 12px;
+    @include for-desktop {
+      padding: 49px 35px 44px;
+    }
+    @include five {
+      padding: 30px 25px 22px;
+    }
+  }
+  &__text {
+    margin: 0;
+    margin-bottom: 18px;
+    padding: 13px 23px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--dark-color);
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid #f0ece8;
+  }
+  &__text:hover {
+    background-color: #f7f5f5;
+    transition: all 0.6s ease;
+  }
+  &__time {
+    margin-left: 16px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--text-color);
+    cursor: pointer;
+    @include f-tablet {
+      margin-left: 10px;
+    }
+  }
+  &__subject {
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--dark-color);
+    @include five {
+      max-width: 390px;
+      font-size: 19px;
+    }
+  }
+  &__link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--dark-color);
+  }
+  &__link:hover {
+    color: #d19103;
+    transition: all 0.3s ease-in-out;
+  }
+  &__btns {
+    text-align: center;
+  }
+  &__btn {
+    padding: 23px 38px;
+    color: var(--dark-color);
+    margin-right: 28px;
+    @include five {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+  &__light-btn {
+    padding: 23px 38px;
+    color: var(--dark-color);
+  }
+}

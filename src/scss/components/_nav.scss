@@ -1,0 +1,54 @@
+.nav {
+  @include small-tablet {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 500;
+    overflow-y: auto;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+  &__list {
+    display: flex;
+    margin-left: 40px;
+    @include small-tablet {
+      @include flex-all-center;
+      flex-direction: column;
+      margin-left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-right: 25px;
+    @include small-tablet {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: var(--dark-color);
+    text-transform: capitalize;
+    @include small-tablet {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 160%;
+    }
+  }
+  &__link:hover {
+    color: #d19103;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.menu--active {
+  opacity: 1;
+  visibility: visible;
+}

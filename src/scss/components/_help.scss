@@ -1,0 +1,85 @@
+.help {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  @include for-desktop {
+    padding-bottom: 150px;
+  }
+  &__subtitle {
+    margin-bottom: 10px;
+    @include six-tablet {
+      text-align: center;
+    }
+  }
+  &__title {
+    margin-bottom: 60px;
+    max-width: 557px;
+    @include nine-tablet {
+      max-width: 448px;
+      font-size: 28px;
+      line-height: 35px;
+    }
+
+    @include six-tablet {
+      margin-bottom: 30px;
+    }
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include six-tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  &__btn {
+    padding: 23px 38px;
+    color: var(--dark-color);
+
+    @include six-tablet {
+      margin-bottom: 30px;
+    }
+  }
+  &__cards {
+    @include six-tablet {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    @include nine-tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include six-tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__item {
+    max-width: 450px;
+    text-align: center;
+    padding: 57px 38px 62px;
+    background-color: var(--light-color);
+    border: 1px solid #f0ece8;
+    box-shadow: 0px 2px 12px rgba(43, 43, 43, 0.06);
+    border-radius: 12px;
+  }
+  &__descr {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--dark-color);
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--text-color);
+  }
+}

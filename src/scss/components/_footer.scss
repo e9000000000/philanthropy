@@ -1,0 +1,33 @@
+.footer {
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 38px;
+    padding-bottom: 35px;
+    @include small-tablet {
+      text-align: center;
+    }
+  }
+  &__text {
+    cursor: pointer;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--text-color);
+  }
+  &__span {
+    margin-left: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-decoration-line: underline;
+    color: var(--dark-color);
+  }
+  &__img {
+    @include small-tablet {
+      display: none;
+    }
+  }
+}
